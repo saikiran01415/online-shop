@@ -7,3 +7,9 @@ function loadComponent(elementId, filePath) {
 
 loadComponent("Header", "Header.html");
 loadComponent("Footer", "Footer.html");
+
+/*  function to redirection */
+
+function redirectTo(link){
+    window.location.href=link
+}
