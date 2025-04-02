@@ -13,6 +13,9 @@ header{
     background-color: black;
     color: white;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
     
 }
 header input{
@@ -41,7 +44,8 @@ header ul{
     font-size: 20px;
     cursor: pointer;
 }
-header ul li:hover{
+
+header ul li:hover,footer ul li:hover{
     text-decoration: underline;
 }
 .profile{
@@ -58,4 +62,45 @@ header ul li:hover{
     border: none;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* footer */
+footer{
+    width: 98.5%;
+    height: auto;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer ul{
+    cursor: pointer;
+}
+/*  main  */
+main{
+    margin-top: 100px;
+}
+
+/* for login page */
+.log_con{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    height: auto;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.login input{
+    width: 250px;
 }
