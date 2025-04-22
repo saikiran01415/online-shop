@@ -104,3 +104,106 @@ main{
 .login input{
     width: 250px;
 }
+
+main{
+    height: auto;
+    scrollbar-width: none;
+}
+
+/* for image slider */
+
+.imagesldercontainor {
+    position: relative;
+    height: 20%;
+    width: 90%; 
+    max-width: 800px;
+    margin: 20px auto; 
+    overflow: hidden; 
+    background-color: red;
+}
+
+/* The image itself */
+
+.imageslidercontainer {
+    position: relative;
+    height: 50vh; /* Adjust the height to be 30% of the viewport */
+    width: 90%; /* Adjust to your desired width */
+    margin: 20px auto; /* Centers the slider */
+    overflow: hidden; /* Hides the images that overflow the container */
+}
+
+/* The slider itself that holds all the images */
+.slider {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Each image inside the slider */
+.slider img {
+    width: 100%; /* Make image take up 100% of the width of the container */
+    height: 100%; /* Make image fill the height of the container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+
+/* Styling for the arrow buttons */
+.imageslidercontainer button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Make sure buttons are on top of the images */
+    transition: background-color 0.3s ease;
+}
+
+/* Left arrow button */
+.prev {
+    left: 10px; /* Position it on the left */
+}
+
+/* Right arrow button */
+.next {
+    right: 10px; /* Position it on the right */
+}
+
+/* Hover effect for the arrows */
+.imageslidercontainer button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker when hovered */
+}
+
+/* Optionally, make the arrows a little bigger when hovered */
+.imageslidercontainer button:focus {
+    outline: none;
+}
+
+
+/* f0r all  products */
+.product_card {
+    height: auto;
+    width: 250px;
+    
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.Allproducts_containor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+    padding: 20px;
+}
+.product_images{
+    height: 150px;
+    width: 150px;
+    /* object-fit: cover; */
+}
